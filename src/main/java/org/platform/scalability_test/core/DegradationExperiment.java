@@ -16,7 +16,6 @@ public class DegradationExperiment<T> extends PlatformExperiment<T> {
 	private void configureExperiment() throws Exception {
 		ExperimentStrategy experimentStrategy = new WorkloadScaling();
 		this.setStrategy(experimentStrategy);
-	
 		this.setNumberOfRequestsPerStep(configuration.getRequestsPerStep());
 		this.setNumberOfSteps(configuration.getNumberOfSteps());
 		this.setAnalyser(new ComposedAnalysis(new AggregatePerformance("Aggregate Performance",

@@ -2,11 +2,7 @@ package org.platform.scalability_test.core;
 
 import org.platform.scalability_test.strategy.Strategy;
 
-import eu.choreos.vv.analysis.AggregatePerformance;
-import eu.choreos.vv.analysis.ComposedAnalysis;
-import eu.choreos.vv.chart.creator.MeanChartCreator;
 import eu.choreos.vv.experiments.Experiment;
-import eu.choreos.vv.experiments.strategy.ExperimentStrategy;
 import eu.choreos.vv.experiments.strategy.WorkloadScaling;
 
 public class PlatformExperiment<T> extends Experiment <T,T>{
@@ -14,7 +10,7 @@ public class PlatformExperiment<T> extends Experiment <T,T>{
 	protected Strategy<T> subject;
 	protected TestConfiguration configuration;
 	
-	protected void setAttributes(TestConfiguration configuration, Strategy<T> subject) throws Exception {
+	public void setAttributes(TestConfiguration configuration, Strategy<T> subject) throws Exception {
 		this.configuration = configuration;
 		this.subject = subject;
 	}
