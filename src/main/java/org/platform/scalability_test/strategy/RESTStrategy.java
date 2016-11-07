@@ -12,20 +12,7 @@ import com.mashape.unirest.http.Unirest;
 public abstract class RESTStrategy implements Strategy<String>{
 
 	protected final String RESOURCE_PATH = "components";
-	protected final String REPOSITORY_PATH = "repositories";
-	protected final String PROCESSING_PATH = "processings";
-	protected final String PROJECT_PATH = "projects";
-	protected final String MODULE_RESULT_PATH = "module_results";
-	protected final String METRIC_COLLECTOR_DETAILS_PATH = "metric_collector_details";
-	protected final String KALIBRO_MODULE_PATH = "kalibro_modules";
-	protected final String METRIC_RESULT_PATH = "metric_results";
-	protected final String TREE_METRIC_RESULT_PATH = "tree_metric_results";
-	protected final String HOTSPOT_METRIC_RESULT_PATH = "hotspot_metric_results";
-	protected final String READING_GROUP_PATH = "reading_groups";
-	protected final String READING_PATH = "readings";
-	protected final String KALIBRO_CONFIGURATION_PATH = "kalibro_configurations";
-	protected final String METRIC_CONFIGURATION_PATH = "metric_configurations";
-	protected final String KALIBRO_RANGE_PATH = "kalibro_ranges";
+	protected final String DATA_PATH = "data";
 
 	protected List<String> urls;
 	protected String basePath;
